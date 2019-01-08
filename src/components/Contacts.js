@@ -48,12 +48,11 @@ phone : "0305-255557777"
 contacts.map(function(snapshot){
 
 
-  return <Contact id={snapshot.id} name={snapshot.name} email = {snapshot.email} phone = {snapshot.phone} />
+  return (<Contact key={snapshot.id} name={snapshot.name} email = {snapshot.email} phone = {snapshot.phone} />)
 
-  
-})
 
-          })
+                                                                                                    
+                            })
         }
 
       </div>
