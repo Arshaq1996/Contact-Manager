@@ -38,6 +38,12 @@ phone : "0305-255557777"
 
 
   }
+
+  deleteContact(){
+
+
+    console.log('deleteclick function')
+  }
   render() {
     const {contacts} = this.state;
     return (

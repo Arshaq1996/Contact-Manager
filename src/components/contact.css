@@ -1,4 +1,4 @@
-h4{
+/* h4{
     color: blue;
 text-transform: uppercase;
 }
@@ -6,4 +6,15 @@ ul{
 
     color: green;
     font-size: 30px;
+} */
+
+#delete{
+
+    color: red;
+    float: right!important;
 }
+body{
+
+    background-color: navy!important;
+}
+
