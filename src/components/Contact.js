@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './contact.css';
-
+import Prototypes from 'prop-types';
 class Contact extends Component { 
  //1st way we can do like this and add bind(this) on the event exmaple onShowClick().bind(this)
 //   state ={
@@ -30,7 +30,7 @@ this.setState({showContactInfo:!this.state.showContactInfo});
 }
 //start Delete function
 onDeleteClick=()=>{
-this.props.deltekey();
+this.props.deletekey();
 
 }
 
@@ -68,8 +68,9 @@ const {showContactInfo}=this.state;
   }
 }
 
+
 Contact.Prototypes={
 
-  deltekey:Contact.Prototypes.func.isRequired
+  deletekey:Prototypes.func.isRequired
 }
 export default Contact;
