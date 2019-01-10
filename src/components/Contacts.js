@@ -29,11 +29,19 @@ class Contacts extends Component {
       ]
     };
   }
+// deleteFunction
+  DeleteContact=(id)=>{
 
-  DeleteContact=()=>{
+    console.log('Okay'+ id)
+    const {contacts}=this.state;
+    const newContacts = contacts.filter(snapshot1=>snapshot1.id!==id)
+    this.setState({
+contacts:newContacts
 
-    console.log('Delete function working properly');
+    })
+
   }
+  // deleteFunction
 
  
 
@@ -54,7 +62,7 @@ class Contacts extends Component {
               name={snapshot.name}
               email={snapshot.email}
               phone={snapshot.phone}
-              deletekey={this.DeleteContact}
+              deletekey={this.DeleteContact.bind(this,snapshot.id)}
             
             />
           );
